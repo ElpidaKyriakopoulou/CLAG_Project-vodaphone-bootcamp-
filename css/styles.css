@@ -86,3 +86,10 @@ footer {
     background-color: #2d3436 !important;
     margin-top: auto;
 }
+/* --- Map --- */
+#map {
+    height: 400px;
+    width: 100%;
+    border-radius: 15px;
+    z-index: 1; /* Για να μην καβαλάει το menu */
+}
