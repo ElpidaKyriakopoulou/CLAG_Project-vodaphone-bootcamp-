@@ -1,17 +1,88 @@
-nav.bg-lime {
-    background-color: #bddc80!important;
-    
-}
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
 
-.container-custom {
-    padding-top: 3em;
+:root {
+    --primary-color: #bddc80; /* Το lime χρώμα που είχες */
+    --secondary-color: #333;
+    --accent-color: #ff6b6b;  /* Ένα ζωντανό χρώμα για κουμπιά */
+    --bg-light: #f8f9fa;
 }
-
-.video-container {
-    text-align: center;
-}
-
 
 body {
-    background-color: #e2ffed;
+    font-family: 'Nunito', sans-serif;
+    background-color: var(--bg-light);
+    color: var(--secondary-color);
+}
+
+/* --- Navigation --- */
+.bg-primary-custom {
+    background-color: var(--primary-color) !important;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+    font-weight: 700;
+    color: #2c3e50 !important;
+}
+
+.nav-link {
+    font-weight: 600;
+    color: #4a5568 !important;
+}
+
+.nav-link.active {
+    color: #000 !important;
+    text-decoration: underline;
+}
+
+/* --- Hero Section --- */
+.hero-section {
+    position: relative;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../images/Dog.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 120px 0;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+
+/* --- Buttons --- */
+.btn-custom {
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 50px;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+.btn-custom:hover {
+    background-color: #ff5252;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(255, 107, 107, 0.4);
+}
+
+/* --- Cards (Statistics & Info) --- */
+.stat-card {
+    background: white;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-10px);
+}
+
+.card-title {
+    color: #2d3436;
+}
+
+/* --- Footer --- */
+footer {
+    background-color: #2d3436 !important;
+    margin-top: auto;
 }
